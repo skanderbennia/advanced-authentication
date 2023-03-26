@@ -1,0 +1,20 @@
+version: "3.1"
+services:
+  redis:
+    image: redis
+    volumes:
+      - ./data:/data
+    ports:
+      - "6379:6379"
+  postgres:
+    image: postgres:latest
+    restart: always
+    ports:
+      - 5433:5432
+    environment:
+      POSTGRES_PASSWORD: example
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080

@@ -1,0 +1,25 @@
+.toast {
+  bottom: 20px;
+  right: 10px;
+  position: fixed;
+  z-index: 100;
+  height: auto;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(20px);
+  padding: 10px;
+  transform: translateX(500px);
+  transition: transform 0.5s;
+  h4 {
+    margin: 0;
+    font-weight: 500;
+  }
+  span {
+    padding-left: 20px;
+  }
+  &.active {
+    transform: translateX(0);
+  }
+  &.error {
+    border: 2px solid rgba(255, 0, 0, 0.5);
+  }
+}

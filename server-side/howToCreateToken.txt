@@ -1,0 +1,2 @@
+run this script and it will return a 64 byte hexdicimal value randomly
+require("crypto").randomBytes(64).toString("hex")

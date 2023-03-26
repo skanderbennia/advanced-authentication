@@ -1,0 +1,10 @@
+POST http://localhost:4000/users/login
+Content-Type: application/json
+
+{"email":"salem@gmail.com","password":"123"}
+
+
+###
+
+GET http://localhost:4000/items/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2Nzg4OTI5NTYsImV4cCI6MTY3ODg5Mjk3MX0.9tzfDji4CAZfE2enCudweqDmoJrW-vTgmTdhqEy3DYk
